@@ -1159,6 +1159,10 @@ public class PDFView extends RelativeLayout {
     private void setSwipeVertical(boolean swipeVertical) {
         this.swipeVertical = swipeVertical;
     }
+    
+     public void enablePinch(boolean enable) {
+        dragPinchManager.enablePinch(enable);
+    }
 
     public void enableAnnotationRendering(boolean annotationRendering) {
         this.annotationRendering = annotationRendering;
